@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>text</title>
+</head>
+<body>
+            
+        <span style="font-size: 8px,rgb(87, 28, 28);" id="text" onclick=" changeSize();">je bouge pas</span>
+        <script>
+            var text = document.getElementById("text");
+            var compteur = 0;
+            function changeSize(){
+              if(compteur==0){
+            text.style.fontSize='56px';
+            text.style.color='red';
+                compteur=1;
+            } else{
+                text.style.fontSize='16px';
+                compteur=0;
+                text.style.color='blue';
+            }
+            
+        }
+    
+
+
+
+</script>
+
+
+
+</body>
+</html>
