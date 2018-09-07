@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text</title>
+</head>
+<body>
+                <style>
+             #container {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: blue;
+            margin-top:100px;
+            float: left;
+            left:45%;
+            
+            }
+    </style>
+    <div id="container"> </div>
+            <div id="reaction">
+                <button onclick="aug();">auguementer</button>
+                <button onclick="vert();">couleur</button>
+                <button onclick="initial();">initial</button>
+                <button onclick="dispare();">disparé</button>
+                <button onclick="retour();">retour</button>
+           
+        </div>
+            <script>
+                function aug(){
+
+                var rectangle = document.getElementById("container");
+                rectangle.style.height='110px';
+                if(rectangle=='300px'){
+                    rectangle.style.height='100px';
+                }
+            }
+            function vert(){
+
+                var rectangle = document.getElementById("container");
+                rectangle.style.backgroundColor='green';
+                }
+                function initial(){
+
+                    var rectangle = document.getElementById("container");
+                    rectangle.style.backgroundColor='blue';
+                    }
+                    function dispare(){
+
+                    var rectangle = document.getElementById("container");
+                    rectangle.style.visibility='hidden';
+                    }
+                    function retour(){
+
+                    var rectangle = document.getElementById("container");
+                    rectangle.style.visibility='visible';
+                    }
+                                </script>
+            
+</body>
+</html>
